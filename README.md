@@ -1,12 +1,24 @@
 # Go Infrastructure As Code
  Pulumi enables seamless Infrastructure as Code (IaC) with Go
 
+# Contents
 
- ## Go-infrastructure-as-code
+# Contents
+
+1. [Go Infrastructure As Code](#go-infrastructure-as-code)
+2. [Files](#files)
+3. [Contents of main.go](#contents-of-main.go)
+4. [Contents of pulumi.prod.yaml](#contents-of-pulumiprod.yaml)
+5. [Contents of pulumi.yaml](#contents-of-pulumiyaml)
+6. [Running the Project](#running-the-project)
+7. [Notes](#notes)
+
+
+ ## 1️⃣Go-infrastructure-as-code
 
 This project consists of infrastructure-as-code written in Go to create AWS resources using Pulumi.
 
-### Files
+### 2️⃣Files
 
 1. **main.go**: This file contains the main code for creating AWS resources using Pulumi. It performs the following tasks:
    - Creates a Security Group (`jenkins-sg`) with inbound rules allowing TCP traffic on port 8080 and SSH traffic on port 22, and outbound rules allowing all traffic.
@@ -20,7 +32,7 @@ This project consists of infrastructure-as-code written in Go to create AWS reso
 
 3. **pulumi.yaml**: This YAML file defines metadata for the Pulumi project, including its name, runtime (Go), and description. It also includes tags for categorizing the resources created by Pulumi.
 
-### Contents of main.go
+### 3️⃣Contents of main.go
 
 ```go
 package main
@@ -95,14 +107,14 @@ func main() {
 }
 ```
 
-### Contents of pulumi.prod.yaml
+### 4️⃣Contents of pulumi.prod.yaml
 
 ```yaml
 config:
   aws:region: eu-north-1
 ```
 
-### Contents of pulumi.yaml
+### 5️⃣Contents of pulumi.yaml
 
 ```yaml
 name: go_infra
@@ -114,7 +126,7 @@ config:
       pulumi:template: aws-go
 ```
 
-### Running the Project
+### 6️⃣Running the Project
 
 To run the project, follow these steps:
 
@@ -124,7 +136,7 @@ To run the project, follow these steps:
 4. Run the main.go file using the `go run` command.
 5. Check the output for the public IP and public DNS of the created EC2 instance.
 
-### Notes
+### 7️⃣Notes
 
 - Make sure you have AWS credentials configured properly to allow Pulumi to create resources in your AWS account.
 - Review the code and configuration files to customize the AWS resources according to your requirements.
