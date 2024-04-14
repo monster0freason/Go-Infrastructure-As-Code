@@ -5,8 +5,8 @@
 
 1. [Go Infrastructure As Code](#1️⃣go-infrastructure-as-code)
 2. [Files](#2️⃣files)
-3. [Contents of main.go](#3️⃣contents-of-main.go)
-4. [Contents of pulumi.prod.yaml](#4️⃣Contents-of-pulumi.prod.yaml)
+3. [Contents of main.go](#3️⃣contents-of-(main.go))
+4. [Contents of pulumi.prod.yaml](#4️⃣contents-of-pulumi.prod.yaml)
 5. [Contents of pulumi.yaml](#5️⃣contents-of-pulumiyaml)
 6. [Running the Project](#6️⃣running-the-project)
 7. [Notes](#7️⃣notes)
@@ -30,7 +30,7 @@ This project consists of infrastructure-as-code written in Go to create AWS reso
 
 3. **pulumi.yaml**: This YAML file defines metadata for the Pulumi project, including its name, runtime (Go), and description. It also includes tags for categorizing the resources created by Pulumi.
 
-### 3️⃣Contents of main.go
+### 3️⃣Contents of (main.go)
 
 ```go
 package main
