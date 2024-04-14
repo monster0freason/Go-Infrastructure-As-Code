@@ -6,7 +6,7 @@
 1. [Go Infrastructure As Code](#1️⃣go-infrastructure-as-code)
 2. [Files](#2️⃣files)
 3. [Contents of main.go](#3️⃣contents-of-main.go)
-4. [Contents of pulumi.prod.yaml](#4️⃣contents-of-pulumiprod.yaml)
+4. [Contents of pulumi.prod.yaml](#4️⃣Contents-of-pulumi.prod.yaml)
 5. [Contents of pulumi.yaml](#5️⃣contents-of-pulumiyaml)
 6. [Running the Project](#6️⃣running-the-project)
 7. [Notes](#7️⃣notes)
